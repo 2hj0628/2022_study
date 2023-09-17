@@ -1,0 +1,100 @@
+@charset "uft-8";
+
+/* 초기화 */
+*{margin: 0; padding: 0;}
+
+/* wrap */
+#wrap{
+    background-color: lightblue;
+    width: 1000px;
+    /* height: ; */
+    margin: 0 auto;
+}
+
+/* header */
+#header{
+    width: 100%;
+    height: 150px;
+    background-color: lightgreen;
+    /* position: relative; */
+}
+
+#header > div{
+    float: left;
+}
+
+.logo{
+    width: 150px;
+    height: 100px;
+    background-color: blueviolet;
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+}
+.search{
+    width: 600px;
+    height: 50px;
+    background-color: brown;
+    /* position: absolute;
+    left: 180px;
+    top: 50px; */
+    margin: 50px 0 0 30px;
+} 
+.lnb{
+    width: 190px;
+    height: 20px;
+    background-color: red;
+    /* position: absolute;
+    right: 0;
+    top: 50px; */
+    /* float때문에 search와 안겹치고 옆으로 감 */
+    margin: 50px 0 0 30px;
+}
+.gnb{
+    width: 100%;
+    height: 20px;
+    background-color: yellow;
+    /* position: absolute;
+    left: 0;
+    bottom: 0; */
+    /* 앞 3개의 클래스가 랩을 다 채워서 자동으로 아랫줄로 내려감 */
+    margin-top: 30px;
+}
+
+
+/* content */
+#content{
+    width: 100%;
+    height: 500px;
+    background-color: lightcoral;
+    /* position: relative; */
+    margin: 10px 0;
+}
+
+.left_col{
+    width: 200px;
+    height: 100%;
+    background-color: blue;
+    /* position: absolute;
+    left: 0;
+    top: 0; */
+    float: left;
+}
+.right_col{
+    width: 750px;
+    height: 100%;
+    background-color: rebeccapurple;
+    /* position: absolute;
+    right: 0;
+    top: 0; */
+    float: right;
+}
+
+
+
+/* footer */
+#footer{
+    width: 100%;
+    height: 100px;
+    background-color: lightsalmon;
+}

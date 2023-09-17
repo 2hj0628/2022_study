@@ -1,0 +1,15 @@
+/* reset css */
+@charset "UTF-8";
+
+* { margin: 0; padding: 0; }
+ol, ul { list-style: none; }
+a { outline: 0; text-decoration: none; color: #555; }
+/* 
+    이미지태그를 만들면 아래쪽 알 수 없는 공백이 3px~5px 정도 생깁니다.
+    이미지 태그는 inline-block이어서 생기는 문제힙니다.
+    이 문제를 해결하기 위해서
+    1. display: block;
+    2. vertical-align: top;
+    3.이미지를 가지고 있는 부모태그에 정확한 이미지 만큼의 너비와 높이를 설정합니다.
+ */
+img { border: 0; vertical-align: top; }

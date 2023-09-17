@@ -1,0 +1,103 @@
+/* header */
+header{
+    height: 60px;
+}
+header h1{
+    font-size: 18px;
+    text-align: center;
+    margin: 20px 0;
+}
+
+header .social{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.social li{
+    float: left;
+    width: 32px;
+    height: 32px;
+    text-indent: -9999px; /*IR 기법*/
+    background: url(../images/social.png) no-repeat;
+}
+
+/*IS 기법*/
+.social li:nth-child(2){background-position: -32px 0;}
+.social li:nth-child(3){background-position: -64px 0;}
+.social li:nth-child(4){background-position: -96px 0;}
+
+header .loginMenu{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.loginMenu li{float: left;}
+.loginMenu li a{
+    font-size: 12px;
+    padding-left: 20px;
+}
+
+/* nav */
+nav .mainMenu{text-align: center;}
+nav .mainMenu li{display: inline-block;}
+.mainMenu li a{
+    font-size: 12px;
+    padding: 0 30px;
+}
+
+/* section - main */
+#main {
+    height: 400px;
+    padding-top: 100px;
+    margin-top: 20px;
+    border-top: 3px solid #c13333;
+    background-image: url(../images/main.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#main div{
+    color: #fff;
+    line-height: 80px;
+    font-size: 30px;
+    text-align: center;
+}
+#main div:first-child{
+    font-size: 50px;
+    letter-spacing: 20px;
+}
+
+/* section - list */
+#list{
+    text-align: center;
+    margin-bottom: 100px;
+}
+#list h2{
+    font-size: 14px;
+    border-bottom: 1px dashed #ddd;
+    height: 40px;
+    line-height: 40px;
+    margin-bottom: 40px;
+}
+#list article{
+    display: inline-block;
+    width: 300px;
+    margin: 0 20px;
+}
+#list h3{
+    padding: 5px;
+    font-weight: bold;
+    font-size: 24px;
+    color: #aaa;
+}
+
+/* footer */
+footer{
+    border-top: 1px solid #ddd;
+    line-height: 40px;
+    padding: 0 20px;
+    text-transform: uppercase;
+}
+footer p:nth-child(1){float: left;}
+footer p:nth-child(2){float: right;}

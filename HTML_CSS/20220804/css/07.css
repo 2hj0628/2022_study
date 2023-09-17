@@ -1,0 +1,21 @@
+div{
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    background-color: aqua;
+}
+
+/* 데스크탑 : 가로폭이 최소 1024px 이상 */
+@media screen and (min-width: 1024px) {
+    div{background-color: red;}    
+}
+
+/* 태블릿 : 가로폭이 최소 640px 이상, 최대 1023px 이하 */
+@media screen and (min-width: 640px) and (max-width: 1023px){
+    div{background-color: blue;}
+}
+
+/* 모바일 : 가로폭이 최대 639px 이하 */
+@media screen and (max-width: 639px) {
+    div{background-color: green;}
+}

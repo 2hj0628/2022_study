@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>폼 관련 요소</title>
+</head>
+<body>
+    <form method="get" action="#">
+        <fieldset>
+            <legend>radio와 checkbox</legend>
+            <p> 성별 <br>
+                <input type="radio" name="gender" id="man" value="male">
+                <label for="man">남자</label>
+                <input type="radio" name="gender" id="woman" value="female" checked>
+                <label for="woman">여자</label>
+                <!-- <label>
+                    <input type="radio" name="gender" value="male"> 남자
+                </label> -->
+            </p>
+            <p>
+                수신설정 <br>
+                <input type="checkbox" name="accept" id="email" checked>
+                <label for="email">메일 수신 허용</label>
+                <input type="checkbox" name="accept" id="sms">
+                <label for="sms">SMS 수신 허용</label>
+            </p>
+            <input type="submit" value="제출하기">
+        </fieldset>
+    </form>
+
+
+
+
+</body>
+</html>

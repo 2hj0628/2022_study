@@ -1,0 +1,36 @@
+# 스택 구현
+# Last Input First Output
+print('##### 스택 구현 #####')
+list1=list()
+print(list1)
+list1.append(('A'))
+print(list1)
+list1.append(('B'))
+print(list1)
+list1.append(('C'))
+print(list1)
+list1.pop()
+print(list1)
+list1.pop()
+print(list1)
+list1.pop()
+print(list1)
+
+
+# 큐 구현
+# First Input First Output
+print('##### 큐 구현 #####')
+list2=list()
+print(list2)
+list2.append('A')
+print(list2)
+list2.append('B')
+print(list2)
+list2.append('C')
+print(list2)
+list2.pop(0)
+print(list2)
+list2.pop(0)
+print(list2)
+list2.pop(0)
+print(list2)

@@ -1,0 +1,8 @@
+span{
+    font: bold 15px/1.6 verdana;
+    color: lightblue;
+    margin: 50px;
+}
+
+span:nth-child(1){text-shadow: 5px 5px 5px #555;}
+span:nth-child(2){text-shadow: 5px -5px 10px #555;}
